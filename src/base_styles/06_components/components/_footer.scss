@@ -1,0 +1,131 @@
+// footer {
+// 	@include media(tablet-up) {
+// 		@include grid;
+// 		@include column-collapse;
+// 	}
+
+// 	margin: 0;
+// 	padding: rem(25px) 0 0;
+// 	width: 100%;
+
+// 	> form {
+// 		@include media(tablet-up) {
+// 			display: flex;
+// 			margin-left: -20px;
+// 			margin-right: -20px;
+// 			width: calc(100% + 40px);
+// 		}
+
+// 		background: $email-signup-bg;
+// 		border-bottom: 1px solid $grey;
+// 		margin-bottom: rem(40px);
+// 		margin-top: rem(10px);
+// 		padding: rem(20px);
+
+// 		legend {
+// 			@include media(tablet-up) {
+// 				align-self: center;
+// 				flex-basis: 40%;
+// 				margin-bottom: rem(2px);
+// 				text-align: end;
+// 				width: 40%;
+// 			}
+
+// 			font-size: rem(14px);
+// 			font-weight: 600;
+// 			margin-bottom: rem(10px);
+// 			width: 100%;
+// 		}
+
+// 		fieldset {
+// 			font-size: rem(12px);
+// 			padding: 0;
+// 			position: relative;
+
+// 			[type='text'] {
+// 				@include media(tablet-up) {
+// 					margin-left: rem(10px);
+// 					width: rem(300px);
+// 				}
+
+// 				height: rem(38px);
+// 				margin: 0;
+// 				padding-right: rem(92px);
+// 				width: 100%;
+// 			}
+
+// 			.email-sumbmit {
+// 				background: $email-signup-button-bg;
+// 				border: 0;
+// 				color: $white;
+// 				font-weight: 600;
+// 				height: rem(38px);
+// 				letter-spacing: rem(1px);
+// 				line-height: initial;
+// 				padding: rem(8px) rem(20px);
+// 				position: absolute;
+// 				right: 0;
+// 				top: 0;
+// 			}
+// 		}
+// 	}
+
+// 	a {
+// 		color: $dark-grey;
+// 		font-weight: 300;
+// 		text-decoration: none;
+// 	}
+
+// 	section {
+// 		@include media(tablet-up) {
+// 			width: auto;
+// 		}
+
+// 		font-size: rem(14px);
+// 		width: 100%;
+
+// 		h2 {
+// 			@include media(tablet-up) {
+// 				background-color: transparent;
+// 				border: 0;
+// 				font-weight: 600;
+// 				padding: 0;
+// 				width: auto;
+// 			}
+
+// 			background-color: $grey;
+// 			border-top: 1px solid $white;
+// 			display: block;
+// 			font-size: rem(12px);
+// 			font-weight: 600;
+// 			margin: 0;
+// 			padding: rem(10px);
+// 			width: 100%;
+// 		}
+
+// 		ul {
+// 			@include media(tablet-up) {
+// 				display: block;
+// 			}
+
+// 			display: none;
+// 			font-size: rem(12px);
+// 			font-weight: 400;
+// 			list-style: none;
+// 			margin: rem(15px) 0 0;
+// 			padding: 0;
+
+// 			li {
+// 				@include media(tablet-up) {
+// 					padding: rem(10px) 0;
+// 				}
+
+// 				padding: rem(10px);
+// 			}
+
+// 			&.expanded {
+// 				display: block;
+// 			}
+// 		}
+// 	}
+// }

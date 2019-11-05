@@ -1,0 +1,15 @@
+@import '../../../base_styles/01_settings/settings';
+@import '../../../base_styles/02_tools/tools';
+@import '../../../base_styles/07_utilities/utilities';
+
+footer {
+	@include media(tablet-up) {
+		@include grid;
+	}
+
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	// position: fixed;
+	width: calc(100% - 20px);
+}

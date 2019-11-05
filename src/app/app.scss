@@ -1,0 +1,26 @@
+@import '../base_styles/01_settings/settings';
+@import '../base_styles/02_tools/tools';
+@import '../base_styles/07_utilities/utilities';
+
+// Header styles go here
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	nav {
+		@include media(tablet-up) {
+			@include grid;
+		}
+	}
+
+	main {
+		@include media(tablet-up) {
+			@include grid;
+		}
+
+		// height: calc(100vh - #{$hdr-min-height});
+		margin: 0 auto;
+		width: calc(100% - 20px);
+	}
+}

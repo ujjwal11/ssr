@@ -1,0 +1,360 @@
+.plp {
+	main {
+		@include grid;
+
+		header {
+			@include media(tablet-up) {
+				@include columns(12);
+			}
+
+			position: relative;
+			width: 100%;
+
+			h1 {
+				margin: rem(40px) 0 rem(10px);
+			}
+
+			span {
+				@include media(tablet-up) {
+					margin-bottom: 0;
+				}
+
+				display: block;
+				font-size: rem(12px);
+				margin-bottom: rem(20px);
+			}
+
+			form {
+				@include media(tablet-up) {
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					top: rem(26px);
+					width: auto;
+				}
+
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+
+				fieldset {
+					border: 0;
+					margin: 0;
+					padding: 0;
+
+					select {
+						border: 1px solid $input-border;
+						font-size: rem(12px);
+						height: rem(38px);
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		nav {
+			@include media(tablet) {
+				@include columns(3);
+
+				margin: 0;
+				padding-top: rem(20px);
+			}
+
+			@include media(desktop) {
+				@include columns(2);
+
+				margin: 0;
+				padding-top: rem(20px);
+			}
+
+			margin: rem(20px) auto;
+			width: 100%;
+
+			.nav-container {
+				@include media(tablet-up) {
+					display: block;
+					margin: 0;
+					padding: 0;
+					position: relative;
+				}
+
+				background-color: $white;
+				display: none;
+				height: 100vh;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 100;
+
+				> ul {
+					@include media(tablet-up) {
+						display: block;
+						margin: 0 0 rem(20px);
+						padding: 0 0 0 rem(15px);
+						position: relative;
+					}
+
+					&::after {
+						content: '-';
+						display: block;
+						font-size: rem(24px);
+						font-weight: 300;
+						position: absolute;
+						right: rem(2px);
+						top: rem(2px);
+					}
+
+					li {
+						@include media(tablet-up) {
+							padding: 0 0 0 rem(15px);
+						}
+
+						list-style: none;
+						margin: 0;
+						padding: 0;
+
+						&:first-child {
+							font-weight: 600;
+							padding-left: 0;
+						}
+
+						&:not(:first-child) {
+							list-style: circle;
+							list-style-position: inside;
+
+							a {
+								margin-left: rem(-5px);
+							}
+						}
+
+						a {
+							color: $font;
+							display: inline-block;
+							font-size: rem(12px);
+							line-height: 2.4;
+							text-decoration: none;
+							word-break: break-word;
+						}
+					}
+
+					&.closed {
+						height: rem(30px);
+						margin: 0;
+						overflow: hidden;
+
+						&::after {
+							content: '+';
+							font-size: rem(18px);
+						}
+
+						&:last-child {
+							margin-bottom: rem(20px);
+						}
+					}
+				}
+			}
+
+			button {
+				@include media(tablet-up) {
+					display: none;
+				}
+
+				width: 100%;
+			}
+		}
+
+		> section {
+			@include media(tablet) {
+				@include columns(9);
+			}
+
+			@include media(desktop) {
+				@include columns(10);
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.product-list {
+				display: flex;
+				flex-grow: 1;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin: 0 auto rem(100px);
+				padding: 0;
+				width: 100%;
+
+				li {
+					@include media(desktop) {
+						flex-basis: calc(100% / 3 - 10px);
+						width: calc(100% / 3 - 10px);
+					}
+
+					flex-basis: calc(100% / 2 - 10px);
+					margin-bottom: rem(20px);
+					width: calc(100% / 2 - 10px);
+
+					&:last-child {
+						flex-basis: 100%;
+						text-align: center;
+						width: 100%;
+					}
+				}
+
+				figure,
+				figcaption {
+					margin: 0;
+					padding: 0;
+
+					img {
+						width: 100%;
+					}
+
+					> a,
+					> span {
+						color: $font;
+						font-size: rem(12px);
+					}
+
+					> a {
+						font-weight: 600;
+						line-height: 2;
+						text-decoration: none;
+					}
+
+					> span {
+						display: block;
+						margin-bottom: rem(10px);
+					}
+
+					.colors {
+						display: flex;
+						flex-wrap: nowrap;
+						margin: rem(10px) 0;
+						padding: 0;
+
+						li {
+							height: rem(20px);
+							margin: 0 rem(10px) 0 0;
+							padding: 0;
+
+							&:not(:nth-child(4n + 4)) {
+								border: solid 1px $grey;
+								box-shadow: 0 0 0 1px $white inset;
+								max-width: rem(20px);
+							}
+
+							&:last-child {
+								font-size: rem(12px);
+								line-height: 1.8;
+							}
+
+							&.red {
+								background: $red;
+							}
+
+							&.green {
+								background: $green;
+							}
+
+							&.blue {
+								background: $blue;
+							}
+						}
+					}
+
+					.rating {
+						display: flex;
+						flex-wrap: nowrap;
+						justify-content: flex-start;
+						margin: 0;
+						padding: 0;
+
+						li {
+							display: inline-block;
+							flex-basis: rem(20px);
+							font-size: rem(12px);
+							position: relative;
+							width: rem(20px);
+
+							&:hover {
+								&:before {
+									content: '\2605';
+									position: absolute;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.open {
+		animation-duration: 4s;
+		animation-name: slideOpen;
+	}
+
+	@keyframes slideOpen {
+		from {
+			height: initial;
+			overflow: hidden;
+		}
+
+		to {
+			height: auto;
+			overflow: visible;
+		}
+	}
+
+	button {
+		background: $white;
+		border: solid 2px $plp-load-more;
+		color: $plp-load-more;
+		cursor: pointer;
+		font-size: rem(11px);
+		font-weight: 600;
+		line-height: 3;
+		padding: 0 rem(30px);
+	}
+
+	// .rating > span:hover ~ span:before {
+	// 	content: '\2605';
+	// 	position: absolute;
+	// }
+
+	// 	.single {
+	// 		@include columns(4, single);
+
+	// 		color: $red;
+
+	// 		&::after {
+	// 			content: 'testy';
+	// 		}
+	// 	}
+
+	// 	.after-single {
+	// 		@include columns(7, single);
+
+	// 		color: $red;
+
+	// 		&::after {
+	// 			content: 'testy';
+	// 		}
+	// 	}
+
+	// 	.carousel1 {
+	// 		list-style: none;
+	// 		margin: 0;
+	// 		min-height: auto;
+	// 		padding: 0;
+
+	// 		img {
+	// 			height: auto;
+	// 		}
+	// 	}
+	// }
+}

@@ -1,0 +1,52 @@
+html {
+	box-sizing: border-box;
+	color: $font;
+	font-family: $open;
+	font-weight: 200;
+	letter-spacing: rem(1px);
+}
+
+* {
+	box-sizing: inherit;
+	letter-spacing: inherit;
+
+	&:before,
+	&:after {
+		box-sizing: inherit;
+		letter-spacing: inherit;
+	}
+}
+
+body {
+	> header,
+	main,
+	> footer {
+		@include media(tablet-up) {
+			@include grid();
+		}
+
+		margin: 0 auto;
+		// width: calc(100% - 20px);
+	}
+}
+
+p {
+	font-size: rem(16px);
+}
+
+h1 {
+	font-weight: 200;
+	letter-spacing: rem(2px);
+	margin-left: 0;
+	padding-left: 0;
+}
+
+fieldset {
+	border: 0;
+}
+
+[type='text'],
+[type='password'] {
+	border: 1px solid $grey;
+	padding: rem(8px);
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.loader {
+	// ボールのサイズ
+	$width: 15px;
+	$height: 15px;
+
+	// バウンドの距離
+	$bounce_height: 30px;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+
+	body {
+		font-family: Montserrat;
+		height: 100vh;
+		position: relative;
+		width: 100%;
+	}
+
+	.wrap {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.text {
+		color: #fbae17;
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+	.bounceball {
+		display: inline-block;
+		height: 37px;
+		position: relative;
+		width: $width;
+		&:before {
+			animation: bounce 500ms alternate infinite ease;
+			background-color: #fbae17;
+			border-radius: 50%;
+			content: '';
+			display: block;
+			height: $height;
+			position: absolute;
+			top: 0;
+			transform-origin: 50%;
+			width: $width;
+		}
+	}
+
+	@keyframes bounce {
+		0% {
+			border-radius: 60px 60px 20px 20px;
+			height: 5px;
+			top: $bounce_height;
+			transform: scaleX(2);
+		}
+		35% {
+			border-radius: 50%;
+			height: $height;
+			transform: scaleX(1);
+		}
+		100% {
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.breadcrumb-nav {
+	@include media(tablet-up) {
+		@include grid;
+		margin: 0 auto;
+	}
+
+	margin: rem(20px) auto 0;
+	width: calc(100% - 40px);
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			font-size: 12px;
+			margin-right: rem(10px);
+			padding: 0;
+
+			&:not(:last-child) {
+				&::after {
+					content: '/';
+					padding-left: rem(10px);
+				}
+			}
+
+			a {
+				color: $font;
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,213 @@
+@charset 'UTF-8';
+// /// `turn a calulated column width that can then be passed in to a `calc()`.
+// ///
+// /// @argument {map} $grid
+// ///
+// /// @argument {number} $columns
+// ///
+// /// @return {string}
+// ///
+// /// @example scss@example scss
+// ///   _neat-column-width($neat-grid, 4)
+// ///
+// /// @access private@access private
+
+// @function _column-width($grid, $columns) {
+// 	$_column-ratio: _column-ratio($grid, $columns);
+// 	$_gutter: map-get($grid, gutters);
+
+// 	@if $_gutter == 0 {
+// 		@return unquote('#{percentage($_column-ratio)}');
+// 	} @else {
+// 	$_gutter-affordance: $_gutter + ($_gutter * $_column-ratio) + px;
+// 		@return unquote('#{percentage($_column-ratio)} - #{$_gutter-affordance}');
+// 	}
+// }
+
+// /// Determine the ratio of `$columns` to the total column count.
+// /// If `$columns` is more than one value, they are handed to
+// /// `_neat-parse-columns()` which will determine the total columns and use this
+// /// value instead of `total-columns`.
+// ///
+// /// @argument {map} $grid
+// ///
+// /// @argument {number | list} $columns
+// ///
+// /// @return {number}
+// ///
+// /// @example scss
+// ///   _neat-column-ratio($grid, 3)
+// ///
+// /// @access private
+
+// @function _column-ratio($grid, $columns) {
+// 	@if length($columns) > 1 {
+// 		@return nth($columns, 1) / _parse-columns($columns);
+// 	} @else if $columns {
+// 		@return $columns / map-get($grid, columns);
+// 	}
+// }
+
+// /// Parse a column count like `3 of 5` and retur the total coloumn count.
+// /// This is to allow a shorthand for custom grids without using a settings map.
+// ///
+// ///
+// /// @argument {list} $span
+// ///
+// /// @return {number}
+// ///
+// /// @example scss
+// ///   _neat-parse-columns(3 of 5)
+// ///
+// /// @access private
+
+// @function _parse-columns($span) {
+// 	@if length($span) == 3 {
+// 		$_total-columns: nth($span, 3);
+// 		@return $_total-columns;
+// 	} @else if length($span) == 2 or if length($span) >= 3 {
+// 		@error '`$column` should contain 2 values, seperated by an `of`';
+// 	}
+// }
+
+/// Return a calulated column width that can then be passed in to a `calc()`.
+///
+/// @argument {map} $grid
+///
+/// @argument {number} $columns
+///
+/// @return {string}
+///
+/// @example scss@example scss
+///   _neat-column-width($neat-grid, 4)
+///
+/// @access private@access private
+
+@function _column-width($grid, $columns) {
+	$_column-ratio: _column-ratio($grid, $columns);
+	$_gutter: map-get($grid, gutters);
+
+	@if $_gutter == 0 {
+		@return unquote('#{percentage($_column-ratio)}');
+	} @else {
+		$_gutter-affordance: $_gutter + ($_gutter * $_column-ratio) + px;
+		@return unquote('#{percentage($_column-ratio)} - #{$_gutter-affordance}');
+	}
+}
+
+/// Determine the ratio of `$columns` to the total column count.
+/// If `$columns` is more than one value, they are handed to
+/// `_neat-parse-columns()` which will determine the total columns and use this
+/// value instead of `total-columns`.
+///
+/// @argument {map} $grid
+///
+/// @argument {number | list} $columns
+///
+/// @return {number}
+///
+/// @example scss
+///   _neat-column-ratio($grid, 3)
+///
+/// @access private
+
+@function _column-ratio($grid, $columns) {
+	@if length($columns) > 1 {
+		@return nth($columns, 1) / _parse-columns($columns);
+	} @else if $columns {
+		@return $columns / map-get($grid, columns);
+	}
+}
+
+/// Parse a column count like `3 of 5` and retur the total coloumn count.
+/// This is to allow a shorthand for custom grids without using a settings map.
+///
+///
+/// @argument {list} $span
+///
+/// @return {number}
+///
+/// @example scss
+///   _neat-parse-columns(3 of 5)
+///
+/// @access private
+
+@function _parse-columns($span) {
+	@if length($span) == 3 {
+		$_total-columns: nth($span, 3);
+		@return $_total-columns;
+	} @else if length($span) == 2 or if length($span) >= 3 {
+		@error '`$column` should contain 2 values, seperated by an `of`';
+	}
+}
+
+/// Append attributes to a the `$_grid-visual` variable in `grid-visual` mixin
+///
+/// @argument {map} $grid
+///
+/// @argument {number (unitless) | null} $columns
+///
+/// @return {number}
+///
+/// @example scss
+///   _neat-column-default($neat-grid, 4)
+///
+/// @access private
+
+@function _append-grid-visual($grid-visual-list, $attributes) {
+	@each $attribute in $attributes {
+		$grid-visual-list: append($grid-visual-list, $attribute, comma);
+	}
+
+	@return $grid-visual-list;
+}
+
+@function calculate-single-row-margin($width) {
+	@return 100% - $width;
+}
+
+/// This function recives a grid map and merges it with Neat's defauls.
+/// It then returns the value of the property that has been passed to it.
+///
+/// @argument {map} $grid
+///
+/// @argument {string} $setting
+///
+/// @return {boolean | color | list | number | string}
+///
+/// @example scss
+///   _retrieve-neat-setting($neat-grid, columns)
+///
+/// @access private
+
+@function _retrieve-setting($grid, $setting) {
+	$_grid-settings: map-merge(_merge-defaults($grid), $grid);
+	@return map-get($_grid-settings, $setting);
+}
+
+/// Apply Neat's default properties to undefined values within a map.
+///
+/// @argument {map} $grid
+///
+/// @return {map}
+///
+/// @example scss
+///   _retrieve-neat-setting($neat-grid)
+///
+/// @access private
+
+@function _merge-defaults($grid) {
+	$_merged-grid: map-merge(
+		(
+			columns: 12,
+			gutter: 20px,
+			media: null,
+			color: rgba(#00d4ff, 0.25),
+			direction: ltr
+		),
+		$grid
+	);
+
+	// @debug $_merged-grid;
+	@return $_merged-grid;
+}

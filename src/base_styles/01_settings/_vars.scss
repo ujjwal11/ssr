@@ -1,0 +1,27 @@
+$white: #fff;
+$black: #000;
+$blue: #002868;
+$grey: #ccc;
+$rebecca-purple: #639; // in honor of Rebecca Mayer https://meyerweb.com/eric/thoughts/category/personal/rebecca/
+$red: #f00;
+$light: #ccc;
+$green: #0f0;
+$font: #333;
+$input-border: #e5e4e5;
+$plp-load-more: #177386;
+$aqua-green: #167285;
+$dark-grey: #666;
+$email-signup-bg: #f6f6f6;
+$email-signup-button-bg: #177386;
+
+$helv: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$open: 'Open Sans', sans-serif;
+// Grid map settings
+$grid: () !default;
+$custom-grid: () !default; // coming soon!
+
+$grid: (
+	columns: 12,
+	max-width: 1200,
+	gutters: 20
+);

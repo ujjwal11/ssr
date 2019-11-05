@@ -1,0 +1,262 @@
+@import '../../base_styles/01_settings/settings';
+@import '../../base_styles/02_tools/tools';
+@import '../../base_styles/07_utilities/utilities';
+
+.myaccountpage {
+	@include media(tablet-up) {
+		@include columns(12);
+		width: auto;
+	}
+
+	font-size: rem(12px);
+	margin-top: rem(30px);
+	width: calc(100% - 20px);
+
+	p {
+		font-size: rem(12px);
+	}
+
+	.left-nav {
+		@include media(tablet-up) {
+			@include columns(3);
+		}
+
+		h1 {
+			font-size: 1.2rem;
+			font-weight: 600;
+		}
+
+		ul {
+			margin: 0;
+			padding-inline-start: 0;
+
+			li {
+				list-style: none;
+				padding: 10px;
+
+				a {
+					color: $black;
+					font-size: rem(15px);
+					text-decoration: none;
+
+					&:hover {
+						color: #808080;
+					}
+				}
+			}
+		}
+	}
+
+	> section {
+		@include media(tablet-up) {
+			@include columns(9);
+		}
+
+		font-size: rem(12px);
+
+		article {
+			h2 {
+				background-color: #f5f5f5;
+				font-size: rem(16px);
+				padding: 10px;
+			}
+
+			&:nth-child(1) {
+				@include media(tablet-up) {
+					@include columns(6);
+					display: inline-block;
+				}
+			}
+
+			&:nth-child(2) {
+				@include media(tablet-up) {
+					@include columns(6);
+					display: inline-block;
+				}
+			}
+
+			&:nth-child(3) {
+				@include media(tablet-up) {
+					@include columns(12);
+				}
+
+				display: flex;
+				flex: 1 0;
+				flex-flow: row wrap;
+
+				h2 {
+					flex: 1 0 100%;
+				}
+
+				fieldset {
+					@include media(tablet-up) {
+						flex: 1 0;
+					}
+					flex: 1 0 100%;
+
+					legend {
+						font-size: rem(14px);
+						font-weight: 600;
+						width: 100%;
+
+						button {
+							background: $email-signup-button-bg;
+							border: 0;
+							color: $white;
+							float: right;
+							font-size: rem(12px);
+							font-weight: 600;
+							height: rem(38px);
+							letter-spacing: rem(1px);
+							line-height: initial;
+							padding: rem(8px) rem(20px);
+						}
+					}
+				}
+			}
+
+			&:nth-child(7) {
+				@include media(tablet-up) {
+					@include columns(6);
+				}
+				font-size: rem(12px);
+				padding-top: rem(45px);
+
+				h2 {
+					background-color: transparent;
+					display: inline;
+					font-size: rem(14px);
+					padding-left: rem(5px);
+				}
+
+				button {
+					background: $email-signup-button-bg;
+					border: 0;
+					color: $white;
+					float: right;
+					font-size: rem(12px);
+					font-weight: 600;
+					height: rem(38px);
+					letter-spacing: rem(1px);
+					line-height: initial;
+					padding: rem(8px) rem(20px);
+				}
+
+				input {
+					margin-bottom: rem(10px);
+					padding: rem(5px);
+					width: 100%;
+
+					&[id='currentPassword'] {
+						background-color: transparent;
+						border: 0;
+					}
+				}
+			}
+		}
+
+		form {
+			display: none;
+			font-size: rem(12px);
+
+			&[id='addressForm'] {
+				@include media(tablet-up) {
+					@include columns(12);
+				}
+
+				fieldset {
+					@include media(tablet-up) {
+						@include columns(6);
+					}
+					float: right;
+					font-size: rem(12px);
+
+					input {
+						@include media(tablet-up) {
+							@include columns(12);
+						}
+						margin-bottom: rem(10px);
+
+						&:nth-child(2),
+						&:nth-child(4) {
+							@include media(tablet-up) {
+								@include columns(6);
+							}
+						}
+					}
+
+					select {
+						@include media(tablet-up) {
+							@include columns(12);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section {
+		@include media(tablet-up) {
+			@include columns(9);
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+
+		form {
+			@include media(tablet-up) {
+				margin-left: 1rem;
+			}
+			width: 100%;
+
+			h3 {
+				font-size: 1rem;
+			}
+
+			fieldset {
+				label {
+					display: block;
+					font-size: rem(12px);
+
+					input {
+						margin-bottom: rem(20px);
+						padding: 0.5rem;
+					}
+				}
+
+				select {
+					margin-bottom: rem(20px);
+					padding: 0.5rem;
+				}
+
+				input {
+					&[type='text'] {
+						@include media(tablet-up) {
+							width: auto;
+						}
+
+						width: 100%;
+					}
+
+					&[type='submit'],
+					&[type='button'] {
+						@include media(tablet-up) {
+							width: auto;
+						}
+
+						background: $email-signup-button-bg;
+						border: 0;
+						color: $white;
+						font-size: rem(12px);
+						font-weight: 600;
+						height: rem(38px);
+						letter-spacing: rem(1px);
+						line-height: initial;
+						padding: rem(8px) rem(20px);
+					}
+				}
+			}
+		}
+	}
+}

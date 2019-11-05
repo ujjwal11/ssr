@@ -1,0 +1,333 @@
+@import '../../base_styles/01_settings/settings';
+@import '../../base_styles/02_tools/tools';
+@import '../../base_styles/07_utilities/utilities';
+
+.checkout {
+	.dot-leader {
+		list-style: none;
+		max-width: 100%;
+		overflow-x: hidden;
+		padding: 0;
+
+		li {
+			padding: rem(15px) 0;
+
+			&::before {
+				content: '.................................................................................................';
+				float: left;
+				letter-spacing: rem(5px);
+				white-space: nowrap;
+				width: 0;
+			}
+
+			span {
+				&:first-child {
+					background-color: $white;
+					padding-right: rem(8px);
+				}
+
+				& + span {
+					background-color: $white;
+					float: right;
+					padding-left: rem(8px);
+				}
+			}
+		}
+	}
+
+	section {
+		@include media(tablet-up) {
+			@include columns(7);
+		}
+
+		@include columns(12);
+		font-size: rem(14px);
+		width: 100%;
+
+		> div {
+			@include media(tablet-up) {
+				width: calc(100% - 30px);
+			}
+
+			border: 1px solid $grey;
+			display: block;
+			margin: rem(40px) auto 0;
+		}
+
+		.shipping {
+			main {
+				display: block;
+			}
+		}
+
+		header {
+			border-bottom: 1px solid $grey;
+			padding: rem(20px);
+			position: relative;
+
+			h2 {
+				@include media(tablet) {
+					font-size: rem(28px);
+				}
+
+				font-size: rem(32px);
+				font-weight: 300;
+				margin: 0;
+			}
+
+			a {
+				color: $aqua-green;
+				font-size: rem(12px);
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+		}
+
+		.saved-shipping-method {
+			padding: rem(20px);
+
+			h3 {
+				font-size: rem(14px);
+			}
+
+			address {
+				font-style: normal;
+				line-height: rem(28px);
+				margin: rem(40px) 0;
+			}
+		}
+
+		form {
+			padding: rem(20px);
+			width: 100%;
+
+			.shipping-methods {
+				legend {
+					font-size: rem(24px);
+					margin-bottom: rem(25px);
+				}
+
+				div {
+					@include media(tablet-up) {
+						@include columns(12);
+						align-items: flex-start;
+						display: flex;
+						margin-bottom: rem(20px);
+						width: 100%;
+					}
+
+					margin-bottom: rem(30px);
+
+					&:last-child {
+						margin-top: 0;
+					}
+
+					input {
+						@include media(tablet-up) {
+							margin-right: rem(20px);
+						}
+
+						width: auto;
+					}
+
+					label {
+						display: inline-block;
+					}
+				}
+			}
+
+			fieldset {
+				@include media(tablet-up) {
+					@include grid;
+					justify-content: space-between;
+					margin-top: rem(36px);
+				}
+
+				display: block;
+				margin: rem(36px) 0 0;
+				padding: 0;
+
+				div {
+					@include media(tablet-up) {
+						@include columns(6);
+						width: calc(50% - 20px);
+					}
+
+					@include media(tablet) {
+						width: 100%;
+					}
+
+					&:last-child {
+						@include media(desktop) {
+							margin-top: 0;
+						}
+
+						margin-top: rem(36px);
+					}
+				}
+			}
+
+			input {
+				@include media(tablet-up) {
+					@include columns(12);
+					margin-bottom: rem(15px);
+				}
+
+				width: 100%;
+			}
+
+			select {
+				@include media(tablet-up) {
+					margin: rem(5px) 0 rem(10px);
+				}
+
+				border: 1px solid $grey;
+				padding: rem(8px);
+				width: 100%;
+			}
+
+			label {
+				@include media(tablet-up) {
+					@include columns(12);
+					font-weight: 500;
+				}
+
+				display: block;
+				font-weight: 700;
+				margin-bottom: rem(16px);
+			}
+
+			small {
+				font-size: rem(12px);
+			}
+		}
+	}
+
+	aside {
+		@include media(tablet-up) {
+			@include columns(5);
+		}
+
+		@include columns(12);
+		width: 100%;
+
+		.item {
+			strong {
+				font-weight: 900;
+			}
+
+			figure {
+				align-content: center;
+				display: flex;
+				margin: rem(20px) 0 0;
+
+				div {
+					font-size: rem(14px);
+
+					&:first-child {
+						color: $grey;
+					}
+				}
+			}
+
+			figcaption {
+				line-height: rem(22px);
+			}
+
+			img {
+				margin-right: rem(18px);
+			}
+		}
+
+		section {
+			@include media(tablet-up) {
+				border: 1px solid $grey;
+			}
+
+			margin: rem(40px) auto 0;
+			width: calc(100% - 30px);
+
+			&:last-child {
+				border-top: 1px solid $grey;
+			}
+
+			header {
+				@include media(tablet-up) {
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+
+			.order-summary {
+				border: 0;
+				margin-bottom: rem(20px);
+				padding: 0;
+
+				ul {
+					@include media(tablet-up) {
+						margin-top: 0;
+						width: 100%;
+					}
+				}
+			}
+
+			.item-total {
+				@include media(tablet-up) {
+					width: 100%;
+				}
+			}
+
+			.cart-items {
+				border: 0;
+				margin-top: rem(20px);
+			}
+		}
+
+		footer {
+			border-top: 1px solid $grey;
+			margin-top: rem(20px);
+			padding: rem(20px);
+
+			table {
+				@include media(tablet) {
+					font-size: rem(14px);
+				}
+
+				font-weight: 500;
+				width: 100%;
+
+				th,
+				td {
+					padding-bottom: rem(20px);
+				}
+
+				th {
+					@include media(tablet-up) {
+						font-weight: 900;
+					}
+
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.place-order {
+		@include media(tablet-up) {
+			width: 300px;
+		}
+
+		@include columns(12);
+		background-color: $aqua-green;
+		border: 0;
+		color: $white;
+		display: block;
+		font-size: rem(12px);
+		height: rem(45px);
+		margin: rem(40px) auto;
+		padding: rem(8px) 0 rem(4px);
+		text-transform: uppercase;
+		width: calc(100% - 30px);
+	}
+}

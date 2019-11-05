@@ -1,0 +1,370 @@
+// .home {
+// 	main {
+// 		h1 {
+// 			@include media(tablet-up) {
+// 				@include columns(12);
+// 			}
+
+// 			font-weight: 200;
+// 		}
+
+// 		> section {
+// 			@include media(tablet-up) {
+// 				@include columns(12);
+// 			}
+
+// 			margin-bottom: rem(60px);
+// 			outline: none; //1px solid $grey;
+
+// 			.carousel {
+// 				margin: 0;
+// 				padding: 0;
+
+// 				img {
+// 					width: 100%;
+// 				}
+// 			}
+
+// 			//hero-banner container
+// 			&:nth-child(2) {
+// 				figure {
+// 					// position: relative;
+
+// 					figcaption {
+// 						@include media(tablet-landscape) {
+// 							// height: auto;
+// 							min-height: 65%;
+// 							// padding: 15px 15px 25px;
+// 							position: absolute;
+// 							// right: 6%;
+// 							top: 15%;
+// 							// width: 29%;
+// 						}
+
+// 						@include media(tablet) {
+// 							height: auto;
+// 							min-height: 65%;
+// 							padding: 15px 15px 25px;
+// 							position: absolute;
+// 							right: 6%;
+// 							top: 15%;
+// 							width: 29%;
+// 						}
+
+// 						@include media(desktop) {
+// 							height: auto;
+// 							min-height: 300px;
+// 							padding: 15px 15px 25px;
+// 							position: absolute;
+// 							right: 6%;
+// 							top: 23%;
+// 							width: 29%;
+
+// 							p {
+// 								font-size: 0.8rem;
+// 							}
+
+// 							h1 {
+// 								font-size: 1.7rem;
+// 							}
+
+// 							a {
+// 								font-size: 1rem;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				//for mobile
+// 				figcaption {
+// 					background-color: rgb(8, 137, 141);
+// 					color: #fff;
+// 					padding: rem(15px) rem(15px) rem(30px);
+// 					text-align: center;
+
+// 					h1 {
+// 						font-size: 1rem;
+// 					}
+
+// 					a {
+// 						border: 1px solid #fff;
+// 						color: inherit;
+// 						font-size: 0.7rem;
+// 						padding: 8px;
+// 						text-decoration: none;
+// 						text-transform: uppercase;
+// 					}
+
+// 					p {
+// 						font-size: 0.6rem;
+// 						text-transform: uppercase;
+// 					}
+// 				}
+// 			}
+
+// 			&:nth-child(3) {
+// 				@include media(tablet) {
+// 					@include columns(8);
+
+// 					figure {
+// 						figcaption {
+// 							h1 {
+// 								font-size: 1.2rem;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				@include media(desktop) {
+// 					@include columns(8);
+
+// 					figure {
+// 						display: flex;
+// 						flex: 1 0;
+// 						flex-flow: column;
+
+// 						img {
+// 							flex: 1 0;
+// 						}
+
+// 						figcaption {
+// 							flex: 1 0;
+// 							padding: 15px 15px 40px;
+
+// 							p {
+// 								font-size: 0.8rem;
+// 							}
+
+// 							h1 {
+// 								font-size: 1.7rem;
+// 							}
+
+// 							a {
+// 								font-size: 1rem;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				//for mobile
+// 				figcaption {
+// 					background-color: rgb(8, 137, 141);
+// 					color: #fff;
+// 					padding: rem(15px) rem(15px) rem(30px);
+// 					text-align: center;
+
+// 					h1 {
+// 						font-size: 1rem;
+// 					}
+
+// 					a {
+// 						border: 1px solid #fff;
+// 						color: inherit;
+// 						font-size: 0.7rem;
+// 						padding: 8px;
+// 						text-decoration: none;
+// 						text-transform: uppercase;
+// 					}
+
+// 					p {
+// 						font-size: 0.6rem;
+
+// 						&:nth-child(1) {
+// 							text-transform: uppercase;
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			&:nth-child(4) {
+// 				@include media(tablet-up) {
+// 					@include columns(4);
+// 				}
+
+// 				figure {
+// 					display: flex;
+// 					flex: 1 0;
+// 					flex-flow: column nowrap;
+
+// 					img {
+// 						flex: 1 0;
+// 					}
+// 				}
+// 			}
+
+// 			//best-seller-container
+// 			&:nth-child(5) {
+// 				@include media(tablet-up) {
+// 					@include columns(12);
+// 				}
+
+// 				display: flex;
+// 				flex-flow: row wrap;
+
+// 				h1 {
+// 					text-align: center;
+// 				}
+
+// 				figure {
+// 					@include media(tablet-up) {
+// 						@include columns(5);
+
+// 						flex: 1 0;
+// 						width: calc(100% / 5);
+
+// 						img {
+// 							@include media(tablet) {
+// 								width: 97%;
+// 							}
+
+// 							width: auto;
+// 						}
+
+// 						figcaption {
+// 							background-color: transparent;
+// 							color: #000;
+
+// 							a,
+// 							p {
+// 								font-size: rem(12px);
+// 								font-weight: 600;
+// 								padding: 0;
+// 							}
+
+// 							p {
+// 								font-weight: 400;
+// 							}
+// 						}
+// 					}
+
+// 					//for mobile
+// 					margin-bottom: 15px;
+
+// 					figcaption {
+// 						a {
+// 							color: #000;
+// 							font-weight: 600;
+// 							text-decoration: none;
+// 						}
+
+// 						p > del {
+// 							color: #808080;
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			//picture-this container
+// 			&:nth-child(6) {
+// 				@include media(tablet-up) {
+// 					@include columns(12);
+// 				}
+
+// 				text-align: center;
+
+// 				p {
+// 					margin-left: auto;
+// 					margin-right: auto;
+// 					width: calc(100% - 20px);
+
+// 					&:nth-child(3) {
+// 						font-size: rem(12px);
+// 						font-weight: 600;
+// 					}
+// 				}
+
+// 				.owl-prev {
+// 					@include media(tablet-up) {
+// 						@include media(tablet) {
+// 							top: 30%;
+// 						}
+
+// 						left: 3%;
+// 						top: 40%;
+// 					}
+
+// 					left: 4%;
+// 					position: absolute;
+// 					top: 22%;
+
+// 					span {
+// 						font-size: 5rem;
+// 					}
+// 				}
+
+// 				.owl-next {
+// 					@include media(tablet-up) {
+// 						@include media(tablet) {
+// 							top: 30%;
+// 						}
+// 						right: 3%;
+// 						top: 40%;
+// 					}
+
+// 					position: absolute;
+// 					right: 4%;
+// 					top: 22%;
+
+// 					span {
+// 						font-size: 5rem;
+// 					}
+// 				}
+
+// 				.owl-lazy {
+// 					padding: 10px;
+// 				}
+// 			}
+
+// 			&:nth-child(7) {
+// 				@include media(tablet-up) {
+// 					@include columns(4);
+// 				}
+// 			}
+
+// 			figure {
+// 				margin: 0;
+// 				position: relative;
+// 				width: 100%;
+
+// 				img {
+// 					width: 100%;
+// 				}
+
+// 				figcaption {
+// 					padding: 15px 15px 25px;
+// 				}
+// 			}
+// 		}
+
+// 		.single {
+// 			@include columns(4, single);
+
+// 			color: $red;
+
+// 			&::after {
+// 				content: 'testy';
+// 			}
+// 		}
+
+// 		.after-single {
+// 			@include columns(7, single);
+
+// 			color: $red;
+
+// 			&::after {
+// 				content: 'testy';
+// 			}
+// 		}
+
+// 		.carousel1 {
+// 			list-style: none;
+// 			margin: 0;
+// 			min-height: auto;
+// 			padding: 0;
+
+// 			img {
+// 				height: auto;
+// 			}
+// 		}
+// 	}
+// }

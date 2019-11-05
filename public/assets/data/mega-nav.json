@@ -1,0 +1,527 @@
+{
+	"links": [{ "rel": "self", "href": "https://ccstore-z0wa.oracleoutsourcing.com/ccstoreui/v1/collections/rootCategory?catalogId=cloudCatalog&maxLevel=1000&expand=childCategories&fields=childCategories%28items%29" }],
+	"items": [
+		{
+			"longDescription": "<div class=\"row product-landing-top-banner\"><a href=\"#\"><img alt=\"You always need something new\" src=\"/file/general/ecomm360-men-landing-banner.jpg\" width=\"100%\" /></a></div>\n\n<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/men-landing-thumb-1a.jpg\" title=\"2015 Spring\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/men-landing-thumb-2a.jpg\" title=\"Street Fashion\" /></a></div>\n</div>\n\n<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/men-landing-thumb-3a.jpg\" title=\"Street Fashion\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/men-landing-thumb-4a.jpg\" title=\"Womens Casual\" /></a></div>\n</div>",
+			"route": "/men/category/ecommercemen",
+			"displayName": "MEN",
+			"categoryPaths": ["/Storefront Navigation/MEN"],
+			"repositoryId": "ecommercemen",
+			"active": true,
+			"categoryIdPaths": ["rootCategory>ecommercemen"],
+			"childCategories": [
+				{
+					"longDescription": null,
+					"route": "/clothing/category/ecommercemenclothing",
+					"displayName": "Clothing",
+					"categoryPaths": ["/Storefront Navigation/MEN/Clothing"],
+					"repositoryId": "ecommercemenclothing",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenclothing"],
+					"childCategories": [
+						{
+							"longDescription": null,
+							"route": "/jackets/category/ecommercemenjackets",
+							"displayName": "Jackets",
+							"categoryPaths": ["/Girls/Clothing/Jackets", "/Storefront Navigation/MEN/Clothing/Jackets"],
+							"repositoryId": "ecommercemenjackets",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommerceclothing>ecommercemenjackets", "rootCategory>ecommercemen>ecommercemenclothing>ecommercemenjackets"],
+							"id": "ecommercemenjackets"
+						},
+						{
+							"longDescription": null,
+							"route": "/hoodies-sweaters/category/ecommercemenhoodies",
+							"displayName": "Hoodies & Sweaters",
+							"categoryPaths": ["/Girls/Clothing/Hoodies & Sweaters", "/Storefront Navigation/MEN/Clothing/Hoodies & Sweaters"],
+							"repositoryId": "ecommercemenhoodies",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommerceclothing>ecommercemenhoodies", "rootCategory>ecommercemen>ecommercemenclothing>ecommercemenhoodies"],
+							"id": "ecommercemenhoodies"
+						},
+						{
+							"longDescription": null,
+							"route": "/shirts/category/ecommercemenshirts",
+							"displayName": "Shirts",
+							"categoryPaths": ["/Girls/Clothing/Shirts", "/Storefront Navigation/MEN/Clothing/Shirts"],
+							"repositoryId": "ecommercemenshirts",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommerceclothing>ecommercemenshirts", "rootCategory>ecommercemen>ecommercemenclothing>ecommercemenshirts"],
+							"id": "ecommercemenshirts"
+						},
+						{
+							"longDescription": null,
+							"route": "/pants/category/ecommercemenpants",
+							"displayName": "Pants",
+							"categoryPaths": ["/Girls/Clothing/Pants", "/Storefront Navigation/MEN/Clothing/Pants"],
+							"repositoryId": "ecommercemenpants",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommerceclothing>ecommercemenpants", "rootCategory>ecommercemen>ecommercemenclothing>ecommercemenpants"],
+							"id": "ecommercemenpants"
+						}
+					],
+					"id": "ecommercemenclothing"
+				},
+				{
+					"longDescription": null,
+					"route": "/footwear/category/ecommercemenfootwear",
+					"displayName": "Footwear",
+					"categoryPaths": ["/Storefront Navigation/MEN/Footwear"],
+					"repositoryId": "ecommercemenfootwear",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenfootwear"],
+					"childCategories": [
+						{
+							"longDescription": null,
+							"route": "/boots/category/ecommercemenboots",
+							"displayName": "Boots",
+							"categoryPaths": ["/Girls/Footwear/Boots", "/Storefront Navigation/MEN/Footwear/Boots"],
+							"repositoryId": "ecommercemenboots",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommercefootwear>ecommercemenboots", "rootCategory>ecommercemen>ecommercemenfootwear>ecommercemenboots"],
+							"id": "ecommercemenboots"
+						},
+						{ "longDescription": null, "route": "/shoes/category/ecommercemenshoes", "displayName": "Shoes", "categoryPaths": ["/Storefront Navigation/MEN/Footwear/Shoes"], "repositoryId": "ecommercemenshoes", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenfootwear>ecommercemenshoes"], "id": "ecommercemenshoes" },
+						{
+							"longDescription": null,
+							"route": "/slippers/category/ecommercemenslippers",
+							"displayName": "Slippers",
+							"categoryPaths": ["/Girls/Footwear/Slippers", "/Storefront Navigation/MEN/Footwear/Slippers"],
+							"repositoryId": "ecommercemenslippers",
+							"active": true,
+							"categoryIdPaths": ["ecommercegirlss>ecommercefootwear>ecommercemenslippers", "rootCategory>ecommercemen>ecommercemenfootwear>ecommercemenslippers"],
+							"id": "ecommercemenslippers"
+						}
+					],
+					"id": "ecommercemenfootwear"
+				},
+				{
+					"longDescription": null,
+					"route": "/accessories/category/ecommercemenaccessories",
+					"displayName": "Accessories",
+					"categoryPaths": ["/Storefront Navigation/MEN/Accessories"],
+					"repositoryId": "ecommercemenaccessories",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenaccessories"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/watches/category/ecommercemenwatches", "displayName": "Watches", "categoryPaths": ["/Storefront Navigation/MEN/Accessories/Watches"], "repositoryId": "ecommercemenwatches", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenaccessories>ecommercemenwatches"], "id": "ecommercemenwatches" },
+						{ "longDescription": null, "route": "/headwear/category/ecommercemenheadwear", "displayName": "Headwear", "categoryPaths": ["/Storefront Navigation/MEN/Accessories/Headwear"], "repositoryId": "ecommercemenheadwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenaccessories>ecommercemenheadwear"], "id": "ecommercemenheadwear" },
+						{ "longDescription": null, "route": "/eyewear/category/ecommercemeneyewear", "displayName": "Eyewear", "categoryPaths": ["/Storefront Navigation/MEN/Accessories/Eyewear"], "repositoryId": "ecommercemeneyewear", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenaccessories>ecommercemeneyewear"], "id": "ecommercemeneyewear" }
+					],
+					"id": "ecommercemenaccessories"
+				},
+				{
+					"longDescription": null,
+					"route": "/shopbyactivity/category/ecommercemenshopbyactivity",
+					"displayName": "Shopbyactivity",
+					"categoryPaths": ["/Storefront Navigation/MEN/Shopbyactivity"],
+					"repositoryId": "ecommercemenshopbyactivity",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenshopbyactivity"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/ski/category/ecommercemenski", "displayName": "Ski", "categoryPaths": ["/Storefront Navigation/MEN/Shopbyactivity/Ski"], "repositoryId": "ecommercemenski", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenshopbyactivity>ecommercemenski"], "id": "ecommercemenski" },
+						{ "longDescription": null, "route": "/fitness/category/ecommercemenfitness", "displayName": "Fitness", "categoryPaths": ["/Storefront Navigation/MEN/Shopbyactivity/Fitness"], "repositoryId": "ecommercemenfitness", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenshopbyactivity>ecommercemenfitness"], "id": "ecommercemenfitness" },
+						{ "longDescription": null, "route": "/hike-camp/category/ecommercemenhiking", "displayName": "Hike & Camp", "categoryPaths": ["/Storefront Navigation/MEN/Shopbyactivity/Hike & Camp"], "repositoryId": "ecommercemenhiking", "active": true, "categoryIdPaths": ["rootCategory>ecommercemen>ecommercemenshopbyactivity>ecommercemenhiking"], "id": "ecommercemenhiking" }
+					],
+					"id": "ecommercemenshopbyactivity"
+				}
+			],
+			"id": "ecommercemen"
+		},
+		{
+			"longDescription": "<div class=\"row product-landing-top-banner\"><a href=\"#\"><img alt=\"You always need something new\" src=\"/file/general/women-banner-1.jpg\" width=\"100%\" /></a></div>\n\n<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/women-landing-thumb1.jpg\" title=\"2015 Spring\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/women-landing-thumb2.jpg\" title=\"Street Fashion\" /></a></div>\n</div>\n\n<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-4 col-md-4 col-lg-4 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/women-landing-thumb3.jpg\" title=\"Street Fashion\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-4 col-md-4 col-lg-4 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/women-landing-thumb4.jpg\" title=\"Womens Casual\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-4 col-md-4 col-lg-4 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/women-landing-thumb5.jpg\" title=\"Womens Casual\" /></a></div>\n</div>",
+			"route": "/women/category/ecommercewomen",
+			"displayName": "WOMEN",
+			"categoryPaths": ["/Storefront Navigation/WOMEN"],
+			"repositoryId": "ecommercewomen",
+			"active": true,
+			"categoryIdPaths": ["rootCategory>ecommercewomen"],
+			"childCategories": [
+				{
+					"longDescription": null,
+					"route": "/clothing/category/ecommercewomenclothing",
+					"displayName": "Clothing",
+					"categoryPaths": ["/Storefront Navigation/WOMEN/Clothing"],
+					"repositoryId": "ecommercewomenclothing",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenclothing"],
+					"childCategories": [
+						{
+							"longDescription": null,
+							"route": "/dresses-skirts/category/ecommercewomendresses",
+							"displayName": "Dresses & Skirts",
+							"categoryPaths": ["/Storefront Navigation/WOMEN/Clothing/Dresses & Skirts"],
+							"repositoryId": "ecommercewomendresses",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenclothing>ecommercewomendresses"],
+							"id": "ecommercewomendresses"
+						},
+						{ "longDescription": null, "route": "/jackets/category/ecommercewomenjackets", "displayName": "Jackets", "categoryPaths": ["/Storefront Navigation/WOMEN/Clothing/Jackets"], "repositoryId": "ecommercewomenjackets", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenclothing>ecommercewomenjackets"], "id": "ecommercewomenjackets" },
+						{ "longDescription": null, "route": "/shorts/category/ecommercewomenshorts", "displayName": "Shorts", "categoryPaths": ["/Storefront Navigation/WOMEN/Clothing/Shorts"], "repositoryId": "ecommercewomenshorts", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenclothing>ecommercewomenshorts"], "id": "ecommercewomenshorts" },
+						{ "longDescription": null, "route": "/tops/category/ecommercewomentops", "displayName": "Tops", "categoryPaths": ["/Storefront Navigation/WOMEN/Clothing/Tops"], "repositoryId": "ecommercewomentops", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenclothing>ecommercewomentops"], "id": "ecommercewomentops" }
+					],
+					"id": "ecommercewomenclothing"
+				},
+				{
+					"longDescription": null,
+					"route": "/footwear/category/ecommercewomenfootwear",
+					"displayName": "Footwear",
+					"categoryPaths": ["/Storefront Navigation/WOMEN/Footwear"],
+					"repositoryId": "ecommercewomenfootwear",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/boots/category/ecommercewomenboots", "displayName": "Boots", "categoryPaths": ["/Storefront Navigation/WOMEN/Footwear/Boots"], "repositoryId": "ecommercewomenboots", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear>ecommercewomenboots"], "id": "ecommercewomenboots" },
+						{ "longDescription": null, "route": "/shoes/category/ecommercewomenshoes", "displayName": "Shoes", "categoryPaths": ["/Storefront Navigation/WOMEN/Footwear/Shoes"], "repositoryId": "ecommercewomenshoes", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear>ecommercewomenshoes"], "id": "ecommercewomenshoes" },
+						{ "longDescription": null, "route": "/sandals/category/ecommercewomensandals", "displayName": "Sandals", "categoryPaths": ["/Storefront Navigation/WOMEN/Footwear/Sandals"], "repositoryId": "ecommercewomensandals", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear>ecommercewomensandals"], "id": "ecommercewomensandals" },
+						{ "longDescription": null, "route": "/slippers/category/ecommercewomenslippers", "displayName": "Slippers", "categoryPaths": ["/Storefront Navigation/WOMEN/Footwear/Slippers"], "repositoryId": "ecommercewomenslippers", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear>ecommercewomenslippers"], "id": "ecommercewomenslippers" },
+						{ "longDescription": null, "route": "/socks/category/ecommercewomensocks", "displayName": "Socks", "categoryPaths": ["/Storefront Navigation/WOMEN/Footwear/Socks"], "repositoryId": "ecommercewomensocks", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenfootwear>ecommercewomensocks"], "id": "ecommercewomensocks" }
+					],
+					"id": "ecommercewomenfootwear"
+				},
+				{
+					"longDescription": null,
+					"route": "/accessories/category/ecommercewomenaccessories",
+					"displayName": "Accessories",
+					"categoryPaths": ["/Storefront Navigation/WOMEN/Accessories"],
+					"repositoryId": "ecommercewomenaccessories",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenaccessories"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/head-neckwear/category/ecommercewomenhead", "displayName": "Head & Neckwear", "categoryPaths": ["/Storefront Navigation/WOMEN/Accessories/Head & Neckwear"], "repositoryId": "ecommercewomenhead", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenaccessories>ecommercewomenhead"], "id": "ecommercewomenhead" },
+						{ "longDescription": null, "route": "/watches/category/ecommercewomenwatches", "displayName": "Watches", "categoryPaths": ["/Storefront Navigation/WOMEN/Accessories/Watches"], "repositoryId": "ecommercewomenwatches", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenaccessories>ecommercewomenwatches"], "id": "ecommercewomenwatches" },
+						{
+							"longDescription": null,
+							"route": "/backpacks/category/ecommercewomenbackpacks",
+							"displayName": "Backpacks",
+							"categoryPaths": ["/Storefront Navigation/WOMEN/Accessories/Backpacks"],
+							"repositoryId": "ecommercewomenbackpacks",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenaccessories>ecommercewomenbackpacks"],
+							"id": "ecommercewomenbackpacks"
+						},
+						{ "longDescription": null, "route": "/eyewear/category/ecommercewomeneyewear", "displayName": "Eyewear", "categoryPaths": ["/Storefront Navigation/WOMEN/Accessories/Eyewear"], "repositoryId": "ecommercewomeneyewear", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenaccessories>ecommercewomeneyewear"], "id": "ecommercewomeneyewear" }
+					],
+					"id": "ecommercewomenaccessories"
+				},
+				{
+					"longDescription": null,
+					"route": "/shopbyactivity/category/ecommercewomenshopbyactivity",
+					"displayName": "Shopbyactivity",
+					"categoryPaths": ["/Storefront Navigation/WOMEN/Shopbyactivity"],
+					"repositoryId": "ecommercewomenshopbyactivity",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenshopbyactivity"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/ski/category/ecommercewomenski", "displayName": "Ski", "categoryPaths": ["/Storefront Navigation/WOMEN/Shopbyactivity/Ski"], "repositoryId": "ecommercewomenski", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenshopbyactivity>ecommercewomenski"], "id": "ecommercewomenski" },
+						{
+							"longDescription": null,
+							"route": "/snowboard/category/ecommercewomensnowboard",
+							"displayName": "Snowboard",
+							"categoryPaths": ["/Storefront Navigation/WOMEN/Shopbyactivity/Snowboard"],
+							"repositoryId": "ecommercewomensnowboard",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenshopbyactivity>ecommercewomensnowboard"],
+							"id": "ecommercewomensnowboard"
+						},
+						{ "longDescription": null, "route": "/fitness/category/ecommercewomenfitness", "displayName": "Fitness", "categoryPaths": ["/Storefront Navigation/WOMEN/Shopbyactivity/Fitness"], "repositoryId": "ecommercewomenfitness", "active": true, "categoryIdPaths": ["rootCategory>ecommercewomen>ecommercewomenshopbyactivity>ecommercewomenfitness"], "id": "ecommercewomenfitness" }
+					],
+					"id": "ecommercewomenshopbyactivity"
+				}
+			],
+			"id": "ecommercewomen"
+		},
+		{
+			"longDescription": "<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/kids-landing-thumb1.jpg\" title=\"2015 Spring\" /></a>\n</div>\n\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/kids-landing-thumb2.jpg\" title=\"Street Fashion\" /></a></div>\n</div>\n\n<div class=\"row product-gallery-wrapper\">\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\"><a href=\"#\"><img alt=\"2015 Spring\" class=\"img-responsive\" src=\"/file/general/kids-landing-thumb3.jpg\" title=\"Street Fashion\" /></a></div>\n\n<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6 product-gallery-image\">\n<a href=\"#\"><img alt=\"Street Fashion\" class=\"img-responsive\" src=\"/file/general/kids-landing-thumb4.jpg\" title=\"Womens Casual\" /></a>\n</div>\n</div>",
+			"route": "/kids/category/ecommercekids",
+			"displayName": "kids",
+			"categoryPaths": ["/Storefront Navigation/kids"],
+			"repositoryId": "ecommercekids",
+			"active": true,
+			"categoryIdPaths": ["rootCategory>ecommercekids"],
+			"childCategories": [
+				{
+					"longDescription": null,
+					"route": "/boys/category/ecommercekidsboys",
+					"displayName": "Boys",
+					"categoryPaths": ["/Storefront Navigation/kids/Boys"],
+					"repositoryId": "ecommercekidsboys",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsboys"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/outerwear/category/ecommerceboysouterwear", "displayName": "Outerwear", "categoryPaths": ["/Storefront Navigation/kids/Boys/Outerwear"], "repositoryId": "ecommerceboysouterwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsboys>ecommerceboysouterwear"], "id": "ecommerceboysouterwear" },
+						{ "longDescription": null, "route": "/clothing/category/ecommerceboysclothing", "displayName": "Clothing", "categoryPaths": ["/Storefront Navigation/kids/Boys/Clothing"], "repositoryId": "ecommerceboysclothing", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsboys>ecommerceboysclothing"], "id": "ecommerceboysclothing" },
+						{ "longDescription": null, "route": "/footwear/category/ecommerceboysfootwear", "displayName": "Footwear", "categoryPaths": ["/Storefront Navigation/kids/Boys/Footwear"], "repositoryId": "ecommerceboysfootwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsboys>ecommerceboysfootwear"], "id": "ecommerceboysfootwear" }
+					],
+					"id": "ecommercekidsboys"
+				},
+				{
+					"longDescription": null,
+					"route": "/girls/category/ecommercekidsgirls",
+					"displayName": "Girls",
+					"categoryPaths": ["/Storefront Navigation/kids/Girls"],
+					"repositoryId": "ecommercekidsgirls",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsgirls"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/outerwear/category/ecommercegirlsouterwear", "displayName": "Outerwear", "categoryPaths": ["/Storefront Navigation/kids/Girls/Outerwear"], "repositoryId": "ecommercegirlsouterwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsgirls>ecommercegirlsouterwear"], "id": "ecommercegirlsouterwear" },
+						{ "longDescription": null, "route": "/clothing/category/ecommercegirlsclothing", "displayName": "Clothing", "categoryPaths": ["/Storefront Navigation/kids/Girls/Clothing"], "repositoryId": "ecommercegirlsclothing", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsgirls>ecommercegirlsclothing"], "id": "ecommercegirlsclothing" },
+						{ "longDescription": null, "route": "/footwear/category/ecommercegirlsfootwear", "displayName": "Footwear", "categoryPaths": ["/Storefront Navigation/kids/Girls/Footwear"], "repositoryId": "ecommercegirlsfootwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsgirls>ecommercegirlsfootwear"], "id": "ecommercegirlsfootwear" }
+					],
+					"id": "ecommercekidsgirls"
+				},
+				{
+					"longDescription": null,
+					"route": "/toddlers-infants/category/ecommercekidstoddlers",
+					"displayName": "Toddlers & Infants",
+					"categoryPaths": ["/Storefront Navigation/kids/Toddlers & Infants"],
+					"repositoryId": "ecommercekidstoddlers",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidstoddlers"],
+					"childCategories": [
+						{
+							"longDescription": null,
+							"route": "/outerwear/category/ecommercetoddlersouterwear",
+							"displayName": "Outerwear",
+							"categoryPaths": ["/Storefront Navigation/kids/Toddlers & Infants/Outerwear"],
+							"repositoryId": "ecommercetoddlersouterwear",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidstoddlers>ecommercetoddlersouterwear"],
+							"id": "ecommercetoddlersouterwear"
+						},
+						{
+							"longDescription": null,
+							"route": "/clothing/category/ecommercetoddlersclothing",
+							"displayName": "Clothing",
+							"categoryPaths": ["/Storefront Navigation/kids/Toddlers & Infants/Clothing"],
+							"repositoryId": "ecommercetoddlersclothing",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidstoddlers>ecommercetoddlersclothing"],
+							"id": "ecommercetoddlersclothing"
+						},
+						{
+							"longDescription": null,
+							"route": "/footwear/category/ecommercetoddlerfootwear",
+							"displayName": "Footwear",
+							"categoryPaths": ["/Storefront Navigation/kids/Toddlers & Infants/Footwear"],
+							"repositoryId": "ecommercetoddlerfootwear",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidstoddlers>ecommercetoddlerfootwear"],
+							"id": "ecommercetoddlerfootwear"
+						}
+					],
+					"id": "ecommercekidstoddlers"
+				},
+				{
+					"longDescription": null,
+					"route": "/accessories/category/ecommercekidsaccessories",
+					"displayName": "Accessories",
+					"categoryPaths": ["/Storefront Navigation/kids/Accessories"],
+					"repositoryId": "ecommercekidsaccessories",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsaccessories"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/eyewear/category/ecommercekidseyewear", "displayName": "Eyewear", "categoryPaths": ["/Storefront Navigation/kids/Accessories/Eyewear"], "repositoryId": "ecommercekidseyewear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsaccessories>ecommercekidseyewear"], "id": "ecommercekidseyewear" },
+						{ "longDescription": null, "route": "/headwear/category/ecommercekidsheadwear", "displayName": "Headwear", "categoryPaths": ["/Storefront Navigation/kids/Accessories/Headwear"], "repositoryId": "ecommercekidsheadwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsaccessories>ecommercekidsheadwear"], "id": "ecommercekidsheadwear" },
+						{ "longDescription": null, "route": "/gloves/category/ecommercekidsgloves", "displayName": "Gloves", "categoryPaths": ["/Storefront Navigation/kids/Accessories/Gloves"], "repositoryId": "ecommercekidsgloves", "active": true, "categoryIdPaths": ["rootCategory>ecommercekids>ecommercekidsaccessories>ecommercekidsgloves"], "id": "ecommercekidsgloves" }
+					],
+					"id": "ecommercekidsaccessories"
+				}
+			],
+			"id": "ecommercekids"
+		},
+		{
+			"longDescription": null,
+			"route": "/sales/category/ecommercesales",
+			"displayName": "Sales",
+			"categoryPaths": ["/Storefront Navigation/Sales"],
+			"repositoryId": "ecommercesales",
+			"active": true,
+			"categoryIdPaths": ["rootCategory>ecommercesales"],
+			"childCategories": [
+				{
+					"longDescription": null,
+					"route": "/men/category/ecommercesalesmen",
+					"displayName": "Men",
+					"categoryPaths": ["/Storefront Navigation/Sales/Men"],
+					"repositoryId": "ecommercesalesmen",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesmen"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/outerwear/category/ecommercesalesmenouterwear", "displayName": "Outerwear", "categoryPaths": ["/Storefront Navigation/Sales/Men/Outerwear"], "repositoryId": "ecommercesalesmenouterwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesmen>ecommercesalesmenouterwear"], "id": "ecommercesalesmenouterwear" },
+						{ "longDescription": null, "route": "/footwear/category/ecommercesalesmenfootwear", "displayName": "Footwear", "categoryPaths": ["/Storefront Navigation/Sales/Men/Footwear"], "repositoryId": "ecommercesalesmenfootwear", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesmen>ecommercesalesmenfootwear"], "id": "ecommercesalesmenfootwear" },
+						{ "longDescription": null, "route": "/clothing/category/ecommercesalesmenclothing", "displayName": "Clothing", "categoryPaths": ["/Storefront Navigation/Sales/Men/Clothing"], "repositoryId": "ecommercesalesmenclothing", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesmen>ecommercesalesmenclothing"], "id": "ecommercesalesmenclothing" },
+						{
+							"longDescription": null,
+							"route": "/accessories/category/ecommercesalesmenaccessories",
+							"displayName": "Accessories",
+							"categoryPaths": ["/Storefront Navigation/Sales/Men/Accessories"],
+							"repositoryId": "ecommercesalesmenaccessories",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesmen>ecommercesalesmenaccessories"],
+							"id": "ecommercesalesmenaccessories"
+						}
+					],
+					"id": "ecommercesalesmen"
+				},
+				{
+					"longDescription": null,
+					"route": "/women/category/ecommercesaleswomen",
+					"displayName": "Women",
+					"categoryPaths": ["/Storefront Navigation/Sales/Women"],
+					"repositoryId": "ecommercesaleswomen",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleswomen"],
+					"childCategories": [
+						{
+							"longDescription": null,
+							"route": "/outerwear/category/ecommercesaleswomenouterwear",
+							"displayName": "Outerwear",
+							"categoryPaths": ["/Storefront Navigation/Sales/Women/Outerwear"],
+							"repositoryId": "ecommercesaleswomenouterwear",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleswomen>ecommercesaleswomenouterwear"],
+							"id": "ecommercesaleswomenouterwear"
+						},
+						{
+							"longDescription": null,
+							"route": "/footwear/category/ecommercesaleswomenfootwear",
+							"displayName": "Footwear",
+							"categoryPaths": ["/Storefront Navigation/Sales/Women/Footwear"],
+							"repositoryId": "ecommercesaleswomenfootwear",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleswomen>ecommercesaleswomenfootwear"],
+							"id": "ecommercesaleswomenfootwear"
+						},
+						{
+							"longDescription": null,
+							"route": "/clothing/category/ecommercesaleswomenclothing",
+							"displayName": "Clothing",
+							"categoryPaths": ["/Storefront Navigation/Sales/Women/Clothing"],
+							"repositoryId": "ecommercesaleswomenclothing",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleswomen>ecommercesaleswomenclothing"],
+							"id": "ecommercesaleswomenclothing"
+						},
+						{
+							"longDescription": null,
+							"route": "/accessories/category/ecommercesaleswomenaccessories",
+							"displayName": "Accessories",
+							"categoryPaths": ["/Storefront Navigation/Sales/Women/Accessories"],
+							"repositoryId": "ecommercesaleswomenaccessories",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleswomen>ecommercesaleswomenaccessories"],
+							"id": "ecommercesaleswomenaccessories"
+						}
+					],
+					"id": "ecommercesaleswomen"
+				},
+				{
+					"longDescription": null,
+					"route": "/kids/category/ecommercesaleskids",
+					"displayName": "Kids",
+					"categoryPaths": ["/Storefront Navigation/Sales/Kids"],
+					"repositoryId": "ecommercesaleskids",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleskids"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/boys-clothing/category/ecommercesaleskidsboys", "displayName": "Boys' Clothing", "categoryPaths": ["/Storefront Navigation/Sales/Kids/Boys' Clothing"], "repositoryId": "ecommercesaleskidsboys", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleskids>ecommercesaleskidsboys"], "id": "ecommercesaleskidsboys" },
+						{
+							"longDescription": null,
+							"route": "/girls-clothing/category/ecommercesaleskidsgirls",
+							"displayName": "Girls' Clothing",
+							"categoryPaths": ["/Storefront Navigation/Sales/Kids/Girls' Clothing"],
+							"repositoryId": "ecommercesaleskidsgirls",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleskids>ecommercesaleskidsgirls"],
+							"id": "ecommercesaleskidsgirls"
+						},
+						{ "longDescription": null, "route": "/toddlers/category/ecommercesaleskidstoddlers", "displayName": "Toddlers", "categoryPaths": ["/Storefront Navigation/Sales/Kids/Toddlers"], "repositoryId": "ecommercesaleskidstoddlers", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleskids>ecommercesaleskidstoddlers"], "id": "ecommercesaleskidstoddlers" },
+						{
+							"longDescription": null,
+							"route": "/accessories/category/ecommercesaleskidsaccessories",
+							"displayName": "Accessories",
+							"categoryPaths": ["/Storefront Navigation/Sales/Kids/Accessories"],
+							"repositoryId": "ecommercesaleskidsaccessories",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesaleskids>ecommercesaleskidsaccessories"],
+							"id": "ecommercesaleskidsaccessories"
+						}
+					],
+					"id": "ecommercesaleskids"
+				},
+				{
+					"longDescription": null,
+					"route": "/shopbyactivity/category/ecommercesalesshopbyactivity",
+					"displayName": "Shopbyactivity",
+					"categoryPaths": ["/Storefront Navigation/Sales/Shopbyactivity"],
+					"repositoryId": "ecommercesalesshopbyactivity",
+					"active": true,
+					"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesshopbyactivity"],
+					"childCategories": [
+						{ "longDescription": null, "route": "/hike-camp/category/ecommercesaleshike", "displayName": "Hike & Camp", "categoryPaths": ["/Storefront Navigation/Sales/Shopbyactivity/Hike & Camp"], "repositoryId": "ecommercesaleshike", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesshopbyactivity>ecommercesaleshike"], "id": "ecommercesaleshike" },
+						{ "longDescription": null, "route": "/bike/category/ecommercesalesbike", "displayName": "Bike", "categoryPaths": ["/Storefront Navigation/Sales/Shopbyactivity/Bike"], "repositoryId": "ecommercesalesbike", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesshopbyactivity>ecommercesalesbike"], "id": "ecommercesalesbike" },
+						{ "longDescription": null, "route": "/ski/category/ecommercesalesski", "displayName": "Ski", "categoryPaths": ["/Storefront Navigation/Sales/Shopbyactivity/Ski"], "repositoryId": "ecommercesalesski", "active": true, "categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesshopbyactivity>ecommercesalesski"], "id": "ecommercesalesski" },
+						{
+							"longDescription": null,
+							"route": "/snowboard/category/ecommercesalessnowboard",
+							"displayName": "Snowboard",
+							"categoryPaths": ["/Storefront Navigation/Sales/Shopbyactivity/Snowboard"],
+							"repositoryId": "ecommercesalessnowboard",
+							"active": true,
+							"categoryIdPaths": ["rootCategory>ecommercesales>ecommercesalesshopbyactivity>ecommercesalessnowboard"],
+							"id": "ecommercesalessnowboard"
+						}
+					],
+					"id": "ecommercesalesshopbyactivity"
+				}
+			],
+			"id": "ecommercesales"
+		},
+		{
+			"longDescription": null,
+			"route": "/brands/category/ecommercebrands",
+			"displayName": "Brands",
+			"categoryPaths": ["/Storefront Navigation/Brands"],
+			"repositoryId": "ecommercebrands",
+			"active": true,
+			"categoryIdPaths": ["rootCategory>ecommercebrands"],
+			"childCategories": [
+				{
+					"longDescription": null,
+					"route": "/basin-and-range/category/ecommercebasin",
+					"displayName": "Basin and Range",
+					"categoryPaths": ["/Brands/Basin and Range", "/Storefront Navigation/Brands/Basin and Range"],
+					"repositoryId": "ecommercebasin",
+					"active": true,
+					"categoryIdPaths": ["ecommercemenbrands>ecommercebasin", "rootCategory>ecommercebrands>ecommercebasin"],
+					"id": "ecommercebasin"
+				},
+				{
+					"longDescription": null,
+					"route": "/the-north-face/category/ecommercenorth",
+					"displayName": "The North Face",
+					"categoryPaths": ["/Brands/The North Face", "/Storefront Navigation/Brands/The North Face"],
+					"repositoryId": "ecommercenorth",
+					"active": true,
+					"categoryIdPaths": ["ecommercemenbrands>ecommercenorth", "rootCategory>ecommercebrands>ecommercenorth"],
+					"id": "ecommercenorth"
+				},
+				{ "longDescription": null, "route": "/marmot/category/ecommercemarmot", "displayName": "Marmot", "categoryPaths": ["/Brands/Marmot", "/Storefront Navigation/Brands/Marmot"], "repositoryId": "ecommercemarmot", "active": true, "categoryIdPaths": ["ecommercemenbrands>ecommercemarmot", "rootCategory>ecommercebrands>ecommercemarmot"], "id": "ecommercemarmot" },
+				{ "longDescription": null, "route": "/castelli-/category/ecommercecastelli", "displayName": "Castelli ", "categoryPaths": ["/Brands/Castelli ", "/Storefront Navigation/Brands/Castelli "], "repositoryId": "ecommercecastelli", "active": true, "categoryIdPaths": ["ecommercemenbrands>ecommercecastelli", "rootCategory>ecommercebrands>ecommercecastelli"], "id": "ecommercecastelli" },
+				{ "longDescription": null, "route": "/salomon/category/ecommercesalomon", "displayName": "Salomon", "categoryPaths": ["/Brands/Salomon", "/Storefront Navigation/Brands/Salomon"], "repositoryId": "ecommercesalomon", "active": true, "categoryIdPaths": ["ecommercemenbrands>ecommercesalomon", "rootCategory>ecommercebrands>ecommercesalomon"], "id": "ecommercesalomon" },
+				{
+					"longDescription": null,
+					"route": "/mountain-hardwear-/category/ecommercemountain",
+					"displayName": "Mountain Hardwear ",
+					"categoryPaths": ["/Brands/Mountain Hardwear ", "/Storefront Navigation/Brands/Mountain Hardwear "],
+					"repositoryId": "ecommercemountain",
+					"active": true,
+					"categoryIdPaths": ["ecommercemenbrands>ecommercemountain", "rootCategory>ecommercebrands>ecommercemountain"],
+					"id": "ecommercemountain"
+				}
+			],
+			"id": "ecommercebrands"
+		}
+	]
+}

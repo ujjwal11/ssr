@@ -1,0 +1,424 @@
+@import '../../base_styles/01_settings/settings';
+@import '../../base_styles/02_tools/tools';
+@import '../../base_styles/07_utilities/utilities';
+
+.cart {
+	@include media(tablet-up) {
+		width: 100%;
+	}
+
+	margin: 1.25rem auto 0;
+	padding-top: rem(15px);
+	width: calc(100% - 20px);
+
+	.banner {
+		background: #d3d3d3;
+		font-size: rem(14px);
+		line-height: 3;
+		margin: 0 0 rem(20px);
+		text-align: center;
+
+		a {
+			color: #333;
+		}
+	}
+
+	dl {
+		font-size: rem(12px);
+		margin-top: 0;
+
+		dt {
+			display: inline;
+			line-height: 2;
+		}
+
+		dd {
+			display: inline;
+			line-height: 2;
+			margin: 0;
+
+			&::after {
+				content: '\A';
+				white-space: pre;
+			}
+		}
+	}
+
+	> header {
+		@include media(tablet-up) {
+			@include columns(12);
+		}
+
+		dl {
+			dt {
+				display: inline;
+			}
+		}
+
+		h1 {
+			padding-left: 0;
+		}
+	}
+
+	section {
+		@include media(tablet-up) {
+			@include columns(8);
+		}
+
+		table {
+			@include media(tablet-up) {
+				border: 1px solid #ddd;
+			}
+
+			border-collapse: collapse;
+			border-left: 0;
+			border-right: 0;
+			max-width: 100%;
+			table-layout: fixed;
+			width: 100%;
+
+			tr {
+				@include media(tablet-up) {
+					display: table-row;
+				}
+				border-top: 1px solid $grey;
+				display: flex;
+				flex-wrap: wrap;
+
+				td {
+					@include media(tablet-up) {
+						display: table-cell;
+					}
+					display: block;
+					padding: rem(10px);
+					vertical-align: top;
+
+					&:first-child {
+						@include media(desktop) {
+							width: 20%;
+						}
+						flex-basis: 50%;
+						padding: rem(20px);
+						vertical-align: top;
+						width: 50%;
+					}
+
+					&:nth-child(2) {
+						flex-basis: 50%;
+						width: 50%;
+					}
+
+					&:last-child {
+						@include media(tablet-up) {
+							display: table-cell;
+							text-align: right;
+							width: 50%;
+						}
+
+						display: flex;
+						flex-basis: 100%;
+						flex-wrap: wrap;
+						width: 100%;
+
+						p {
+							@include media(tablet-up) {
+								margin: 0;
+								width: auto;
+							}
+							flex-basis: 20%;
+							font-size: rem(14px);
+							margin: rem(5px) rem(20px) 0 0;
+							width: 20%;
+						}
+
+						select {
+							@include media(tablet-up) {
+								margin: rem(10px) 0;
+								width: rem(80px);
+							}
+							display: initial;
+							flex-basis: 40%;
+							height: 30px;
+							width: 40%;
+						}
+
+						ul {
+							@include media(tablet-up) {
+								justify-content: flex-end;
+								margin: rem(10px) 0;
+								width: auto;
+							}
+
+							display: flex;
+							justify-content: space-around;
+							list-style: none;
+							margin: rem(10) auto;
+							padding: 0;
+							width: calc(100% - 20px);
+
+							li {
+								font-size: rem(12px);
+								padding: rem(4px) 0 0 rem(10px);
+								text-transform: uppercase;
+
+								a {
+									@include media(tablet-up) {
+										background: none;
+										color: $black;
+										display: inline-block;
+										font-size: inherit;
+										margin: 0 0 0 rem(20px);
+										padding: 0;
+										width: auto;
+									}
+
+									background: $email-signup-button-bg;
+									border: 0;
+									color: $white;
+									display: inline;
+									font-weight: 600;
+									height: rem(38px);
+									letter-spacing: rem(1px);
+									line-height: initial;
+									margin: 0 auto rem(20px);
+									padding: rem(8px) rem(20px);
+									width: calc(100% - 20px);
+								}
+							}
+						}
+					}
+
+					img {
+						max-width: 100%;
+					}
+				}
+			}
+
+			.cart-image-info {
+				font-size: rem(14px);
+				vertical-align: top;
+
+				a {
+					@include media(tablet-up) {
+						font-size: inherit;
+					}
+
+					color: #000;
+					display: block;
+					font-size: rem(14px);
+					font-weight: 600;
+					text-decoration: none;
+				}
+
+				p {
+					color: #000;
+
+					&:nth-child(1) {
+						color: #ddd;
+					}
+				}
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	aside {
+		@include media(tablet-up) {
+			@include columns(4);
+		}
+
+		background-color: #ddd;
+		padding: 15px;
+
+		h2 {
+			@include media(tablet) {
+				font-size: 1rem;
+			}
+			font-size: 1.2rem;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		table {
+			@include media(tablet) {
+				font-size: rem(13px);
+				padding: 10px;
+			}
+			background-color: $white;
+			border: 1px solid $grey;
+			padding: 30px;
+			width: 100%;
+
+			tbody {
+				tr {
+					.free {
+						color: $red;
+					}
+
+					&:last-child {
+						font-weight: 600;
+						line-height: 3rem;
+					}
+				}
+			}
+
+			tfoot {
+				tr {
+					td {
+						padding-bottom: 12px;
+
+						button {
+							background-color: rgb(8, 137, 141);
+							border: 0;
+							color: $white;
+							display: block;
+							padding: 16px;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		.secure {
+			padding: 15px;
+			text-align: center;
+		}
+
+		.collapsible {
+			background-color: $white;
+			border: 0;
+			//color: $white;
+			cursor: pointer;
+			font-size: rem(13px);
+			outline: none;
+			padding: 1rem 1rem 1rem 2rem;
+			text-align: left;
+			width: 100%;
+
+			&::after {
+				//color: $white;
+				content: '\002B';
+				float: right;
+				font-weight: bold;
+				margin-left: 5px;
+			}
+		}
+
+		.active {
+			&::after {
+				content: '\2212';
+			}
+		}
+
+		.content {
+			background-color: $white;
+			border-bottom: 2px solid #ddd;
+			max-height: 0;
+			overflow: hidden;
+			padding: 0 18px;
+			transition: max-height 0.2s ease-out;
+			width: 100%;
+
+			> p {
+				font-size: rem(13px);
+				padding-left: rem(14px);
+
+				&:nth-child(2) {
+					display: inline;
+				}
+			}
+
+			.code {
+				display: inline;
+			}
+
+			a {
+				color: $black;
+				font-size: rem(13px);
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	//you-may-also-like-container
+	.you-may-also-like {
+		@include media(tablet-up) {
+			@include columns(12);
+		}
+
+		display: flex;
+		flex-flow: row wrap;
+
+		h1 {
+			@include media(tablet-up) {
+				@include columns(12);
+
+				font-size: 2rem;
+			}
+
+			color: $black;
+			font-size: 1.6rem;
+			font-weight: normal;
+		}
+
+		figure {
+			@include media(tablet-up) {
+				@include columns(5);
+
+				flex: 1 0;
+				width: calc(100% / 4);
+
+				img {
+					@include media(tablet) {
+						width: 97%;
+					}
+				}
+
+				figcaption {
+					background-color: transparent;
+					color: #000;
+
+					a,
+					p {
+						font-size: rem(12px);
+						font-weight: 600;
+						padding: 0;
+					}
+
+					p {
+						font-weight: 400;
+					}
+				}
+			}
+
+			//for mobile
+			margin: 0;
+			padding: 10px;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			figcaption {
+				a {
+					color: #000;
+					font-weight: 600;
+					text-decoration: none;
+				}
+
+				p > del {
+					color: #808080;
+				}
+			}
+		}
+	}
+}
